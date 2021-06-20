@@ -1,8 +1,5 @@
 #include<iostream>
-
 using namespace std;
-
-
 int factorial(int n)// o tambien llamado permutacion
 {
 	if(n < 0)
@@ -19,7 +16,6 @@ int factorial(int n)// o tambien llamado permutacion
 	    	return n*factorial(n-1);// ultimo valor q es n x factorial qe es n-1
 		}
 }
-
 // 5! = 5x(4x(3x(2x(1x0!))))
 // 5! = 5x(4x(3x(2x(1x1))))
 // 5! = 5x(4x(3x(2x1)))
@@ -36,6 +32,5 @@ int main()
 	
 	cout<<"-----------CALCULO DE FACTORIAL----------"<<endl;
 	cout<<"Ingrese el numero a calcular : ";
-	cin>>n;
-	cout<<factorial(n);// aca llamamos al factorial para q muestre
+	cin>>n;	cout<<factorial(n);// aca llamamos al factorial para q muestre
 }
